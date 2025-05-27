@@ -6,4 +6,4 @@
 -Commit
 -Branch
 -Merge
--Push
+-Push -u

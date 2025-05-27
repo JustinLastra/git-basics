@@ -1,0 +1,132 @@
+.header {
+  background-color: #525a53;
+  padding: 15px; 
+  text-align: center; 
+  color: bisque; 
+  font-size: 36px; 
+
+  margin: 0;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #5a6e5c;
+  margin: 0;
+}
+
+.info { 
+    color:bisque;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px; 
+    padding: 10px; 
+    border: 2px solid #4e4d4d; 
+    border-radius: 10px; 
+    background-color: background-color: #5a6e5c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 800px; 
+    line-height: 1.5; 
+}
+
+.topics {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.topics__title {
+    color: beige;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;  
+    margin-right: 55px;
+}
+ 
+.topics__list {
+  list-style-type: none;
+line-height: 3;
+color: beige;
+}
+.footer {
+  background-color: #525a53;
+  color: bisque;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.signup__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.input  {
+  padding: 10px;
+  border: 2px solid #4e4d4d;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+  .signup__form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: beige;
+    font-size: 36px;
+    font-weight: bold;  
+    margin-right: 55px;
+    text-align: center;
+    
+  }
+
+  .label {
+    color: bisque;
+    font-size: 20px;
+    margin-right: 10px;
+    display: flex;
+    padding-bottom: 10px;  }
+
+    .signup__button {
+      
+      background-color: #4e4d4d;
+      color: bisque;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: 105px;
+
+    }
+    .student__scores {
+      display: flex;
+      justify-content: center;
+        flex-direction: column;
+        max-width: 800px;
+        margin: 20px auto;
+        color: beige
+
+
+    }
+      
+    .student__scores-title {
+      color: beige;
+      font-size: 36px;
+      font-weight: bold;  
+      text-align: center;
+      margin-bottom: 50px;
+    }

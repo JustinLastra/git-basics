@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My First Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My First Website</h1>
+      
+      <p class="info">
+        This pages contains various HTML elements we have learned
+      </p>
+      
+    </header>
+  </body>
+  <section class="topics">
+    <h2 class="topics__title">Topics Covered</h2>
+    <ul class="topics__list">
+      <li>HTML Structure</li>
+      <li>Meta Tags</li>
+      <li>Heading, Paragraphs, Spans and Divs</li>
+      <li>Lists</li>
+      <li>Tables</li>
+      <li>forms </li>
+  </section>
+  <section class="student__scores">
+    <h2 class="student__scores-title">Student Scores</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <th>JD</th>
+            <th>100</th>
+        </tr>
+        <tr>
+            <th>Bob</th>
+            <th>88</th>
+        </tr>
+        <tr>
+            <th>Charlie</th>
+            <th>95</th>
+    </table>
+  </section>
+  <section class="signup__form">
+    <h2 class="signup__form-title">Signup Form</h2>
+    <form>
+        <label class="label" for="name">Name:</label>
+        <input class="input" type="text" id="name" name="name" required />
+        <br />
+        <label class="label"  for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email" required />
+        <br />
+        <label class="label" for="password">Password:</label>
+        <input class="input" type="password" id="password" name="password" required />
+        <br />
+        <select  id="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option>
+        </select>
+        <button class="signup__button" type="submit">Submit</button>
+    </form>
+  </section>
+    <footer class="footer">
+        <p>Created by Justin Lastra 2025</p>
+        </p>
+</html>

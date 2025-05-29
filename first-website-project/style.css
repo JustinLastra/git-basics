@@ -98,10 +98,10 @@ color: beige;
     font-size: 20px;
     margin-right: 10px;
     display: flex;
-    padding-bottom: 10px;  }
+    padding-bottom: 10px; 
+ }
 
     .signup__button {
-      
       background-color: #4e4d4d;
       color: bisque;
       padding: 10px 20px;
@@ -110,15 +110,15 @@ color: beige;
       cursor: pointer;
       font-size: 18px;
       margin-left: 105px;
-
     }
+
     .student__scores {
       display: flex;
       justify-content: center;
         flex-direction: column;
         max-width: 800px;
         margin: 20px auto;
-        color: beige
+        color: beige;
 
 
     }

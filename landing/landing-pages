@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Product - Natural Beauty</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">YourBrand</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#shop" class="btn">Shop Now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Glow Naturally</h1>
+        <p>Clean skincare powered by science and nature.</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+      </div>
+      <img src="your-hero-image.jpg" alt="Hero Image" class="hero-image" />
+    </section>
+
+    <section id="product" class="product">
+      <h2>Our Best Seller</h2>
+      <div class="product-showcase">
+        <img src="product-image.jpg" alt="Product" />
+        <div class="product-details">
+          <h3>Botanical Serum</h3>
+          <p>
+            A lightweight, antioxidant-rich serum that hydrates and brightens
+            skin naturally.
+          </p>
+          <ul>
+            <li>✔ 100% Vegan</li>
+            <li>✔ No parabens or sulfates</li>
+            <li>✔ Dermatologist approved</li>
+          </ul>
+          <a href="#shop" class="btn">Buy Now - $39</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <h2>What People Are Saying</h2>
+      <div class="review-cards">
+        <div class="card">“Best skincare I’ve ever used!” – Jane D.</div>
+        <div class="card">“Smells amazing and actually works.” – Emily R.</div>
+        <div class="card">“My skin glows now!” – Carla S.</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 YourBrand. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

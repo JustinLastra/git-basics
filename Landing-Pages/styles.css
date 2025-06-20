@@ -1,24 +1,7 @@
-@font-face {
-  font-family: "Faith And Glory One", sans-serif;
-  src: url("FaithAndGloryOne.woff2") format("woff2"),
-    url("FaithAndGloryOne.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Faith And Glory Two";
-  src: url("FaithAndGloryTwo.woff2") format("woff2"),
-    url("FaithAndGloryTwo.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  
   color: #222;
   background: #fff;
 }
@@ -26,24 +9,68 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
-  background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.nav-links {
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #926479;
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  transform: translateX(10px);
+  transition: all 0.5s ease-in-out;
+  transform: skewX(-20deg);
 }
 
 .logo {
-  font-weight: 600;
   font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px; /* Reduced gap */
 }
 
 .nav-links a {
-  margin-left: 2rem;
+  color: white;
   text-decoration: none;
-  color: #222;
-  font-weight: 500;
+  font-size: 1rem; /* Default nav link font size */
+  padding: 0.5rem 1rem; /* Default padding */
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  ont-family: "Inter", sans-serif;
+}
+
+/* Mobile Styles (using a media query) */
+@media (max-width: 768px) {
+  /* Ensure navbar is a row */
+  .navbar {
+    flex-direction: row; /* Force row layout */
+    align-items: center; /* Vertically align items */
+  }
+
+  .logo {
+    font-size: 1.2rem; /* Smaller logo font size on mobile */
+  }
+
+  .nav-links {
+    justify-content: space-around; /* Distribute links evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem; /* Smaller nav link font size on mobile */
+    padding: 0.1rem 0.2rem; /* Reduced padding on mobile */
+  }
 }
 
 .btn,
@@ -54,6 +81,7 @@ body {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
+  ont-family: "Inter", sans-serif;
 }
 
 .hero {
@@ -63,6 +91,7 @@ body {
   padding: 3rem 2rem;
   background: #f6f6f6;
   text-align: center;
+  ont-family: "Inter", sans-serif;
 }
 
 .hero-image {
@@ -74,13 +103,21 @@ body {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: "Faith And Glory One", sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-style: italic;
+  font
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .product {
   padding: 4rem 2rem;
   background: #e2c8c8;
   text-align: center;
+  ont-family: "Inter", sans-serif;
 }
 
 .product-showcase {
@@ -100,10 +137,19 @@ body {
 .product-details {
   max-width: 400px;
   text-align: left;
+  ont-family: "Inter", sans-serif;
+}
+
+.product-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  ont-family: "Inter", sans-serif;
 }
 
 .product-details h3 {
   margin-bottom: 0.5rem;
+  ont-family: "Inter", sans-serif;
 }
 
 .product-details ul {
@@ -115,6 +161,7 @@ body {
   background: #f9f9f9;
   padding: 3rem 2rem;
   text-align: center;
+  ont-family: "Inter", sans-serif;
 }
 
 .review-cards {
@@ -123,6 +170,7 @@ body {
   justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
+  ont-family: "Inter", sans-serif;
 }
 
 .card {
@@ -142,7 +190,7 @@ footer {
 }
 .shop {
   padding: 4rem 2rem;
-  background: #fff;
+  background: #e4dcdc;
   text-align: center;
   top-margin: 2rem;
   position: relative;
@@ -150,11 +198,13 @@ footer {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin: 2rem auto;
+  padding-top: 2rem;
 }
 
 .shop h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
+  ont-family: "Inter", sans-serif;
 }
 
 .product-grid {
@@ -197,3 +247,21 @@ footer {
   font-size: 1rem;
   color: #444;
 }
+
+@media (max-width: 768px) {
+  /* Assuming the button has the class "btn" */
+  .btn {
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    text-align: center; /* Center the text within the button */
+    max-width: 85px; /* Optional: Limit the width of the button */
+  }
+
+  /* Assuming the text is in an <h3> element */
+  h3 {
+    text-align: center; /* Center the text horizontally */
+  }
+}
+
+/* Add this in your <head> section */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
